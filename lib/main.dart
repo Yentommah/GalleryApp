@@ -103,7 +103,113 @@ Widget build(BuildContext context){
                   height:10
                   ),
                   Row(
-                    
+                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                      children: [
+                        Material(
+                          color:Colors.grey.withOpacity(0.2),
+                          borderRadius:BorderRadius.circular(35) ,
+                        child:Padding(
+                          padding: EdgeInsets.all(16),
+                          child: Row(
+                            children: [
+                              Icon(
+                              Icons.favorite,
+                             color:Colors.red, 
+                              ),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Text('2.1M',
+                              style:TextStyle(fontSize: 14),
+                              ),
+                            ],),
+                        ) , 
+                        ),
+                        SizedBox(
+                          width:10 ,
+                          ),
+                          FlutterImageStack(
+                            imageList:_images,
+                            showTotalCount:false,
+                            totalCount: 4,
+                            itemRadius: 35,
+                            itemCount: 
+                            4,
+                            itemBorderWidth: 2,
+                            ),
+                      ],),
+                      Material(
+                          color:Colors.grey.withOpacity(0.2),
+                          borderRadius:BorderRadius.circular(35) ,
+                        child:Padding(
+                          padding: EdgeInsets.all(16),
+                          child: Row(
+                            children: [
+                              Icon(
+                              CupertinoIcons.chat_bubble_fill,
+                             color:Colors.grey, 
+                              ),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Text('4.1M',
+                              style:TextStyle(fontSize: 14),
+                              ),
+                            ],),
+                        ) , 
+                        ),
+                        SizedBox(
+                          width:10 ,
+                          ), 
+
+                      
+
+
+
+
+                    ],),
+                ],
+                
+                
+                )
+              ),
+                 Card(
+              color:Colors.white,
+              margin: EdgeInsets.fromLTRB(16, 10, 16, 10),
+              child: Column(
+                children: [
+                  ListTile(
+                    leading:CircleAvatar(
+                      backgroundImage: NetworkImage(
+                        'https://images.unsplash.com/photo-1618757850520-6e3e48d07746?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
+
+                      )
+                    ),
+                    title:Text(
+                      'Ali Gifty',
+                       style:TextStyle(fontWeight:FontWeight.w600,fontSize:17 ),),
+                       subtitle:Row(
+                         children:[Icon(Icons.location_on,
+                         size:14,
+                         color:Colors.blue,
+                         ),
+                         Text('Bolgatanga,Ghana'),
+                         ]
+                       ),
+                  ),
+                    Image.network(
+                  'https://media.istockphoto.com/photos/love-my-grandchildren-picture-id1289084512?s=612x612',
+                   height:218,
+                    width: MediaQuery.of(context).size.width,
+                    fit: BoxFit.cover,  
+                ),
+                SizedBox(
+                  height:10
+                  ),
+                  Row(
+                   mainAxisAlignment: MainAxisAlignment.spaceBetween,  
                     children: [
                       Row(
                       children: [
